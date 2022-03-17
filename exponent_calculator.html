@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            body{
+                text-align: center;
+                height: 500px;
+                margin-top: 200px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Exponent Calculator</h1>
+        <div>
+            <input type="text" placeholder="enter a number" id="number1">
+        </div>
+        <p> Power Raise To </p>
+        <div>
+            <input type="text" placeholder="enter a number" id="number2">
+        </div>
+        <p> = </p>
+        <p>
+            <div id="answer"></div>
+        </p>
+        <p>
+            <button class="button" onclick="myFunction()">Expotent</button>
+        </p>
+    </body>
+</html>
+
+<script>
+    document.querySelector(".button").addEventListener("click", calci)
+    function calci(event) {
+    var a = document.getElementById("number1").value;
+    var b = document.getElementById("number2").value;
+    var multiply = 1;
+                        
+    for (i = 1; i <= b; i++) {
+        multiply = multiply*a 
+    }
+    document.getElementById("answer").innerHTML = multiply;
+    return false;
+}
+</script>
